@@ -1,0 +1,42 @@
+/* Styles for the main unordered list container */
+.list-container {
+  list-style: none; /* Removes default bullet points */
+  padding: 0;      /* Removes default padding */
+  margin: 20px 0;  /* Adds some space above and below the list */
+}
+
+/* Styles for each individual list item (the <li> element) */
+.list-item {
+  background-color: #fff; /* White background for each item */
+  margin: 10px 0;         /* Space between each list item */
+  padding: 15px;          /* Padding inside each item */
+  border: 1px solid #ddd; /* A light grey border */
+  border-radius: 5px;     /* Slightly rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* A subtle shadow */
+  text-align: left;       /* Text aligns to the left */
+}
+
+/* Styles for the title of a post inside a list item */
+.post-title {
+  color: #007bff; /* A vibrant blue color */
+  margin-bottom: 5px; /* Space below the title */
+  font-size: 1.2em;   /* Slightly larger font for titles */
+}
+
+/* Styles for the body text of a post inside a list item */
+.post-body {
+  color: #555;       /* A darker grey color for body text */
+  font-size: 0.9em;   /* Slightly smaller font for body text */
+  line-height: 1.5;   /* Makes text easier to read by adding space between lines */
+}
+
+/* Style for the "No items to display" message when the list is empty */
+.list-empty-message {
+  color: #6c757d;
+  font-size: 1.1em;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+}
+

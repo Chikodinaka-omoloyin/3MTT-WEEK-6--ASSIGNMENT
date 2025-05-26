@@ -1,0 +1,66 @@
+/* Global body styles for the entire page */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* A modern, clean font */
+  -webkit-font-smoothing: antialiased; /* Makes fonts look smoother on macOS/iOS */
+  -moz-osx-font-smoothing: grayscale; /* Makes fonts look smoother on Firefox macOS */
+  background-color: #eef2f5; /* A light, soft grey background for the whole page */
+  color: #333; /* Default text color */
+}
+
+/* Styles for the main application container (the <div> in App.js) */
+.app-container {
+  padding: 30px; /* Space inside the container */
+  max-width: 800px; /* Limits the container's width on large screens */
+  margin: 40px auto; /* Centers the container horizontally on the page */
+  background-color: #f9f9f9; /* A slightly off-white background for the container */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* A subtle shadow to make it stand out */
+  text-align: center; /* Centers text elements within this container */
+}
+
+/* Styles for the main title "My Awesome Posts Viewer" */
+.app-title {
+  color: #333;
+  font-size: 2.8em; /* Very large text for the title */
+  margin-bottom: 30px; /* Space below the title */
+  border-bottom: 2px solid #007bff; /* A blue line under the title */
+  padding-bottom: 10px; /* Space between title text and the line */
+  display: inline-block; /* Makes the border-bottom only as wide as the text */
+}
+
+/* Styles for the "Loading posts..." message */
+.loading-message {
+  color: #007bff; /* Blue color for loading text */
+  font-size: 1.5em; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  animation: pulse 1.5s infinite ease-in-out; /* Apply the pulse animation */
+}
+
+/* Styles for the error message */
+.error-message {
+  color: #dc3545; /* Red color for errors */
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: #ffe3e6; /* Light red background for emphasis */
+  padding: 15px; /* Padding inside the error box */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #dc3545; /* Red border */
+}
+
+/* Styles for the "No posts found" message */
+.no-data-message {
+  color: #6c757d; /* Greyish color */
+  font-size: 1.2em;
+  padding: 20px;
+  background-color: #e9ecef; /* Light grey background */
+  border-radius: 8px;
+}
+
+/* Define the 'pulse' animation */
+@keyframes pulse {
+  0% { opacity: 0.5; } /* Starts half transparent */
+  50% { opacity: 1; } /* Becomes fully visible */
+  100% { opacity: 0.5; } /* Fades back to half transparent, creating a pulse effect */
+}
+
